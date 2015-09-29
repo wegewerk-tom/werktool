@@ -1,0 +1,36 @@
+{
+    "name": "wegewerk/devops/WerkTool",
+    "type": "project",
+    "description": "Scripts for extending Composer.",
+    "license": "http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Thomas Stec ",
+            "email": "initialinitialc@wegewerk.com"
+        },
+        {
+            "name": "wegewerk GmbH",
+            "homepage": "http://www.wegewerk.com"
+        }
+    ],
+    "require": {
+
+        "php": ">=5.4",
+
+        "kzykhys/git": "dev-master",
+        "albertofem/rsync-lib": "1.0.*",
+        "vanilla/garden-cli": "1.2.*",
+        "seld/cli-prompt":"1.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "wegewerk\\devops\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "vendor-dir": "vendor",
+        "bin-dir": "bin"
+    }
+}
